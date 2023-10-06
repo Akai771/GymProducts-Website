@@ -1,0 +1,39 @@
+.col{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Card1 */
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    width: 400px;
+    background: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px;
+    gap: 6px;
+    align-items: flex-start;
+    
+    
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    width: 550px;
+    background: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px; 
+    gap: 6px;
+    flex-grow: 0;
+}
+
+.head{
+    position: absolute
+}
