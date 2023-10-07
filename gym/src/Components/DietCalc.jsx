@@ -3,17 +3,16 @@ import { useState } from "react"
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-// import "./Components/DietCard.css";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './DietCalc.css'
 import './DietCard.css'
 import './Fonts.css'
+import FooterNew from "./Footer/Footer";
 // import Accordion from 'react-bootstrap/Accordion';
 
 const DietCalc = () => {
     const [weight, setWeight] = useState(0);
-    const [height, setHeight] = useState(0);
+    const [height, setHeight] = useState(0); 
 
     const handleChange1 = (event) => {
         setWeight(event.target.value);
@@ -33,16 +32,16 @@ const DietCalc = () => {
 
     const BmiText = () => {
             if (bmi < 18.5 && bmi > 0) {
-                return(<p className="input__description" style={{color: "#fff"}}>You are Underweight</p>)
+                return(<p className="input__description" style={{color:"#FFD369"}}>You are Underweight</p>)
             } 
             else if (bmi >= 18.5 && bmi < 25){
-                return(<p className="input__description" style={{color: "#2ff764"}}>You are Normal</p>)
+                return(<p className="input__description" style={{color:"#FFD369"}}>You are Normal</p>)
             }
             else if (bmi >= 25 && bmi < 30){
-                return(<p className="input__description" style={{color: "#fff"}}>You are Overweight</p>)
+                return(<p className="input__description" style={{color:"#FFD369"}}>You are Overweight</p>)
             }
             else if (bmi >= 30){
-                return(<p className="input__description" style={{color: "#fff"}}>You are Obese</p>)
+                return(<p className="input__description" style={{color:"#FFD369"}}>You are Obese</p>)
             }
         }
 
@@ -70,12 +69,12 @@ const DietCalc = () => {
                     If you are underweight, you may need to make some changes to your diet to gain weight. Here are some tips:
                     <br/><br/>
                     <Accordion>
-                    <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
-                        <h4 className="Mont800">Vegetarian</h4>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+                    <label className="Mont800">Vegetarian</label>
                     </AccordionSummary>
                     <AccordionDetails>
                             <ul style={{paddingLeft:"10px"}}>
-                                <li><h2>Breakfast</h2>
+                                <li><label className="Mont800">Breakfast</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Oatmeal with berries and nuts</li>
@@ -84,7 +83,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Lunch</h2>
+                                <li><label className="Mont800">Lunch</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Chickpea salad sandwich on whole-wheat bread</li>
@@ -93,7 +92,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Dinner</h2>
+                                <li><label className="Mont800">Dinner</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Vegetarian chili</li>
@@ -103,7 +102,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Snacks</h2>
+                                <li><label className="Mont800">Snacks</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                         <li>Trail mix (nuts, seeds, and dried fruit)</li>
@@ -119,12 +118,12 @@ const DietCalc = () => {
                      </Accordion>   
                         <br/>
                     <Accordion>
-                    <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
-                        <h4 className="Mont800">Non-Vegetarian</h4>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+                        <label className="Mont800">Non-Vegetarian</label>
                     </AccordionSummary>
                     <AccordionDetails >
                     <ul style={{paddingLeft:"10px"}}>
-                                <li><h2>Breakfast</h2>
+                                <li><label className="Mont800">Breakfast</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Oatmeal with berries and nuts</li>
@@ -134,7 +133,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Lunch</h2>
+                                <li><label className="Mont800">Lunch</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Salad with grilled chicken or fish</li>
@@ -144,7 +143,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Dinner</h2>
+                                <li><label className="Mont800">Dinner</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                             <li>Grilled salmon with roasted vegetables</li>
@@ -154,7 +153,7 @@ const DietCalc = () => {
                                         </i>
                                     </ul>
                                 </li>
-                                <li><h2>Snacks</h2>
+                                <li><label className="Mont800">Snacks</label>
                                     <ul style={{fontWeight:"lighter"}}>
                                         <i>
                                         <li>Fruits and vegetables</li>
@@ -184,7 +183,7 @@ const DietCalc = () => {
                     </Accordion>
                     <br/>
                     You should also aim to eat three meals and two to three snacks per day. This will help you to consume more calories throughout the day.
-                    <br/>
+                    <br/><br/>
                     If you are struggling to gain weight, you may want to consider talking to your doctor or a registered dietitian. They can help you to create a personalized diet plan that meets your individual needs.
                 </p>)
             } 
@@ -209,19 +208,19 @@ const DietCalc = () => {
             else if (bmi >= 30){
                 return(<p className="dietPlan__description" style={{color: "#fff"}}>
                     If you are obese, you may need to make some significant changes to your diet to lose weight and improve your health. Here are some tips:
-            {/* <ul>
-                <li>Eat a healthy diet that is low in calories and high in nutrients.</li>
-                <li>Avoid processed foods, sugary drinks, and unhealthy fats.</li>
-                <li>Eat plenty of fruits and vegetables.</li>
-                <li>Limit alcohol.</li>
-                <li>Exercise regularly.</li>
-            </ul>
-            <br></br>
-            <Accordion data-bs-theme="dark">
-            <Accordion.Item eventKey="0">
-                <Accordion.Header>Vegetarian</Accordion.Header>
-                <Accordion.Body>
-                <ul>
+                    <ul>
+                        <li>Eat a healthy diet that is low in calories and high in nutrients.</li>
+                        <li>Avoid processed foods, sugary drinks, and unhealthy fats.</li>
+                        <li>Eat plenty of fruits and vegetables.</li>
+                        <li>Limit alcohol.</li>
+                        <li>Exercise regularly.</li>
+                    </ul>
+                    <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+                    <label className="Mont800">Vegetarian</label>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    <ul>
                         <li>Breakfast
                             <ul style={{fontWeight:"lighter"}}>
                                 <i>
@@ -259,14 +258,14 @@ const DietCalc = () => {
                             </ul>
                         </li>
                     </ul>
-
-
-
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-                <Accordion.Header>Non-Vegetarian</Accordion.Header>
-                <Accordion.Body>
+                    </AccordionDetails>
+                     </Accordion>   
+                        <br/>
+                    <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+                        <label className="Mont800">Non-Vegetarian</label>
+                    </AccordionSummary>
+                    <AccordionDetails >
                 <ul>
                         <li>Breakfast
                             <ul style={{fontWeight:"lighter"}}>
@@ -305,40 +304,41 @@ const DietCalc = () => {
                             </ul>
                         </li>
                     </ul>
-                </Accordion.Body>
-            </Accordion.Item>
-            </Accordion> */}
+                    </AccordionDetails>
+                    </Accordion>
             <br/>
         </p>)
             }
         }
     
     return (<>
-    <div className="col alignBox">
-        {/* BMI Calculator */}
-        <form className="card" onSubmit={handleSubmit}>
-            <h1 className='Mont800 al_txt' style={{color:"#2ff764"}} >BMI Calculator</h1>
-            <label class="input__label">Weight (in kgs)</label>
-            <input className="input" placeholder="Enter your weight" type="number" value={weight} onChange={handleChange1}/>
-            <br/>
-            <label class="input__label">Height (in cms)</label>
-            <input className="input" placeholder="Enter your height" type="number" value={height} onChange={handleChange2}/>
-            <p className="input__description">BMI: {bmi.toFixed(2)}</p>
-            <BmiText/>
-        </form>
-        <br></br>
-        <br></br>
+    <section className="topSec">
+        <div className="col alignBox">
+            {/* BMI Calculator */}
+            <form className="card1" onSubmit={handleSubmit}>
+                <h1 className='Mont800 al_txt' style={{color:"#FFD369"}} >BMI Calculator</h1>
+                <label class="input__label">Weight (in kgs)</label>
+                <input className="input" placeholder="Enter your weight" type="number" value={weight} onChange={handleChange1}/>
+                <br/>
+                <label class="input__label">Height (in cms)</label>
+                <input className="input" placeholder="Enter your height" type="number" value={height} onChange={handleChange2}/>
+                <p className="input__description">BMI: {bmi.toFixed(2)}</p>
+                <BmiText/>
+            </form>
+            <br></br>
+            <br></br>
 
-        {/* Diet Plan */}
-        <div className="card2 ">
-            <h1 className="Mont800 al_txt"  style={{color:"#2ff764", flexDirection:"row"}}>Diet Plan</h1>
-            <div style={{ flexGrow: 0 }}>
-                <DietPlan/>
+            {/* Diet Plan */}
+            <div className="card2 ">
+                <h1 className="Mont800 al_txt"  style={{color:"#FFD369", flexDirection:"row"}}>Diet Plan</h1>
+                <div style={{ flexGrow: 0 }}>
+                    <DietPlan/>
+                </div>
             </div>
         </div>
-
-
-    </div>
+    </section>
+    <FooterNew/>
+    
     </>);
   }
   

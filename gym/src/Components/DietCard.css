@@ -4,28 +4,26 @@
 }
 
 /* Card1 */
-.card{
+.card1{
     display: flex;
     flex-direction: column;
-    border: 2px solid;
+    border: 2px;
     width: 400px;
-    background: rgb(17, 17, 17);
+    background: #222831;
     padding: 15px;
     border-radius: 20px;
     position: relative;
     margin: 10px;
     gap: 6px;
-    align-items: flex-start;
-    
-    
+    /* align-items: flex-start; */ 
 }
 
 .card2{
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    width: 550px;
-    background: rgb(17, 17, 17);
+    border: 2px;
+    width: 500px;
+    background: #222831;
     padding: 15px;
     border-radius: 20px;
     position: relative;
@@ -37,3 +35,4 @@
 .head{
     position: absolute
 }
+  

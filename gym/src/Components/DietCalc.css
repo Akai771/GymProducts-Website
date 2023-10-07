@@ -1,3 +1,13 @@
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+.topSec{
+  height: 1000px;
+  margin-bottom:50px;
+}
+
+
 .alignBox{
   display: flex;
   flex-direction: column;
@@ -6,7 +16,6 @@
   gap: 20px;
   margin-top: 20px;
 }
-
 
 .input__container {
   /* border: 5px solid #000000; */
@@ -99,7 +108,7 @@ radial-gradient(at 9% 32%, hsla(222,75%,60%,1) 0px, transparent 50%);
   
   .input:hover,.input:focus {
     background: rgb(255, 255, 255);
-    border: 2px solid #873dff;
+    border: 2px solid #FFD369;
     color: #252525;   
   }
 
