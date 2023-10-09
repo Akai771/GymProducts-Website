@@ -14,8 +14,8 @@ const Prod = () => {
           <div className="rowCatCard">
 
             <div className="CatCard">
-              <Link to="https://www.instagram.com/">
-                <img src="https://img1.hkrtcdn.com/27140/smn_image_2713960_o.png" alt="Protien Shakes"/>
+              <Link to="/ProductDisplay">
+                <img src="https://img1.hkrtcdn.com/27140/smn_image_2713960_o.png" alt="Protiens"/>
               </Link>
             </div>
             

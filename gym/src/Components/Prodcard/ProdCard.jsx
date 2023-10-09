@@ -8,8 +8,12 @@ const ProdCard = ({ProdData}) => {
   const {ProdImage, ProdTitle, ProdDesc, ProdPrice} = ProdData;
 
   function handleChange() {
-    setButtonTxt('Added to Cart');
-  }
+      if (buttonTxt === 'Added to Cart') {
+        setButtonTxt('Add to Cart');
+      } else{
+        setButtonTxt('Added to Cart');
+      }
+    }
     return (
       <>
         <div class="Prodcard">

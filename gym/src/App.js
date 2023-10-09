@@ -8,6 +8,7 @@ import Prod from "./Components/Categories";
 import DietCalc from "./Components/DietCalc";
 import NavBar from "./Components/Navbar";
 import PracPage from "./Components/PracPage";
+import ProductDisplay from "./Components/ProductPage/ProductDisplay";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/DietCalc" element={<DietCalc />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/PracPage" element={<PracPage/>} />
+          <Route exact path="/ProductDisplay" element={<ProductDisplay/>} />
         </Routes>
       </Router>
     </>
