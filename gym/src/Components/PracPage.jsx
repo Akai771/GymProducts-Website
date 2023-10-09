@@ -4,7 +4,7 @@ function PracPage() {
 
     return(<>
         <div style={{padding:"60px"}}>
-            <h1>trial page</h1>
+            <h1 className="Mont800" style={{textAlign:"center"}}>Cart</h1>
         </div>
     </>)
 }
