@@ -4,9 +4,10 @@ import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import About from "./Components/About";
 import Home from "./Components/Home";
-import Prod from "./Components/Product";
+import Prod from "./Components/Categories";
 import DietCalc from "./Components/DietCalc";
 import NavBar from "./Components/Navbar";
+import PracPage from "./Components/PracPage";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/Product" element={<Prod />} />
+          <Route exact path="/Categories" element={<Prod />} />
           <Route exact path="/DietCalc" element={<DietCalc />} />
           <Route exact path="/About" element={<About />} />
+          <Route exact path="/PracPage" element={<PracPage/>} />
         </Routes>
       </Router>
     </>

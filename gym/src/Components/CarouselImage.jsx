@@ -1,10 +1,5 @@
 const data = [
       {
-        imageUrl: "https://img4.hkrtcdn.com/30402/bnr_3040143_o.jpg", 
-        caption:"Slide 1",
-        description:"Description 1"
-      },
-      {
         imageUrl: "https://img4.hkrtcdn.com/30402/bnr_3040153_o.jpg", 
         caption:"Slide 2",
         description:"Description 2"

@@ -165,20 +165,6 @@ const DietCalc = () => {
                                     </ul>
                                 </li>
                             </ul>
-                            <br/>
-                            It is important to eat calorie-dense foods, which means foods that are high in calories and nutrients. This will help you to gain weight. Some examples of calorie-dense foods include:
-                            <ul style={{fontWeight:"lighter", paddingLeft:"10px"}}>
-                                <i>
-                                <li>Avocados</li>
-                                <li>Nuts and seeds</li>
-                                <li>Olive oil</li>
-                                <li>Dairy products</li>
-                                <li>Eggs</li>
-                                <li>Fatty fish</li>
-                                <li>Whole grains, such as oats, quinoa, and brown rice</li>
-                                <li>Lean protein sources, such as chicken, fish, and beans</li>
-                                </i>
-                            </ul>
                     </AccordionDetails>
                     </Accordion>
                     <br/>
@@ -313,6 +299,16 @@ const DietCalc = () => {
     
     return (<>
     <section className="topSec">
+            <div className="BmiCardAlign">
+                <div>
+                
+                <div className="bmiInfoCard" style={{fontSize:13}}>
+                    <h1 className="Mont800" style={{color:"#FFD369", fontSize:30}}>BMI <span className="Mont800" style={{color:"#393E46"}}>Calculator</span></h1>
+                    <p className="Mont400">BMI calculator is a tool that estimates the amount of body fat a person has. It is calculated by dividing weight in kilograms by the square of height in meters.</p>
+                    <p className="Mont400">BMI is a good general indicator of whether a person is underweight, normal weight, overweight, or obese. However, it is important to note that BMI does not take into account muscle mass or body composition. For example, a very muscular person may have a high BMI even though they have a low percentage of body fat.</p>
+                </div>
+                </div>
+            </div>
         <div className="col alignBox">
             {/* BMI Calculator */}
             <form className="card1" onSubmit={handleSubmit}>
@@ -336,6 +332,24 @@ const DietCalc = () => {
                 </div>
             </div>
         </div>
+        {/* <div className="BmiCardAlign alnNote">
+                <div className="abtCard1" style={{fontSize:12}}>
+                <h1 className="Mont800" style={{color:"#393E46", fontSize:20}}>*Note</h1>
+                    <p className="Mont400">BMI is a useful tool for screening for weight categories that may lead to health problems, but it is important to note that it has some limitations. For example, BMI does not:
+                        <ul >
+                            <i>
+                            <li className="Mont400">Take into account muscle mass or body composition.</li>
+                            <li className="Mont400">Accurately reflect body fat percentage in certain groups of people, such as athletes, pregnant women, and the elderly.</li>
+                            <li className="Mont400">Diagnose body fatness or health problems.</li>
+                            </i>
+                        </ul>
+                        <p className="Mont400" style={{color:"#ff4d40"}}>*If you have any concerns about your weight or health, it is important to talk to your doctor.*</p>
+                    </p>
+                </div>
+            </div> */}
+    </section>
+    <section className="bottomSec">
+        
     </section>
     <FooterNew/>
     

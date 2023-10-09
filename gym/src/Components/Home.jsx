@@ -2,6 +2,7 @@ import React from "react";
 import CarouselHome from "./Carousel.jsx";
 import ProdCard from "./Prodcard/ProdCard";
 import HomeInfoSec from "./HomeInfo/homeInfoSec.jsx";
+import ProdData from "./Prodcard/prod_Data";
 import "./Home.css";
 import "./Fonts.css";
 import FooterNew from "./Footer/Footer.jsx";
@@ -16,11 +17,10 @@ const Home = () =>{
         <div class="vl"><h1 className="Mont800" style={{color:"#393E46", paddingLeft:"10px"}}>Popular</h1></div>
         <br/>
         <div className="rowCard">
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
+            {ProdData.map((ProdData) => (
+                <ProdCard key={ProdData.id} ProdData={ProdData}/>
+                ))
+            }
         </div>
         <br/><br/>    
     </section>
@@ -29,11 +29,10 @@ const Home = () =>{
         <div class="vl"><h1 className="Mont800" style={{color:"#393E46", paddingLeft:"10px"}}>Just Launched!</h1></div>
         <br/>
         <div className="rowCard">
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
-            <ProdCard/>
+            {ProdData.map((ProdData) => (
+                <ProdCard key={ProdData.id} ProdData={ProdData}/>
+            ))
+            }
         </div>
         <br/><br/>   
     </section>

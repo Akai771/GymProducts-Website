@@ -3,8 +3,22 @@ body{
 }
 
 .topSec{
-  height: 1000px;
+  height: 550px;
   margin-bottom:50px;
+}
+.bottomSec{
+  background-color: #FFD369;
+  height: 1000px;
+  flex-direction: column;
+  
+}
+
+.BmiCardAlign{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 
@@ -137,6 +151,24 @@ radial-gradient(at 9% 32%, hsla(222,75%,60%,1) 0px, transparent 50%);
 .button1:hover {
   background-color: rgb(132, 0, 255);
   color: rgb(255, 255, 255);
+}
+
+.bmiInfoCard{
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  border: 2px;
+  background: #f1f1f1;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+  gap: 6px;
+  color: #393E46;
+}
+
+.alnNote{
+  padding-top: 200px;
 }
 
 
