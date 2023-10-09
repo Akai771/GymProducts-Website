@@ -20,13 +20,13 @@ const Prod = () => {
             </div>
             
             <div className="CatCard">
-              <Link to="https://www.instagram.com/">
+              <Link to="/Gainer">
                 <img src="https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png" alt="Gainers"/>
               </Link>
             </div>
 
             <div className="CatCard">
-              <Link to="https://www.instagram.com/">
+              <Link to="/PrePostWorkout">
                 <img src="https://img5.hkrtcdn.com/27140/smn_image_2713974_o.png" alt="Pre/Post Workout"/>
               </Link>
             </div>
@@ -36,19 +36,19 @@ const Prod = () => {
           <div className="rowCatCard">
 
             <div className="CatCard">
-            <Link to="https://www.instagram.com/">
+            <Link to="/FitFoods">
               <img src="https://img9.hkrtcdn.com/27140/smn_image_2713968_o.png" alt="Fit Foods" />
             </Link>
             </div>
 
             <div className="CatCard">
-            <Link to="https://www.instagram.com/">
+            <Link to="/FatLoss">
               <img src="https://img1.hkrtcdn.com/27140/smn_image_2713980_o.png"alt="Fat Loss" />
             </Link>
             </div>
 
             <div className="CatCard">
-            <Link to="https://www.instagram.com/">
+            <Link to="/Vitamins">
               <img src="https://img9.hkrtcdn.com/27140/smn_image_2713978_o.png" alt="Vitamins & Supplements"/>
             </Link>
             </div>

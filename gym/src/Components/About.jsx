@@ -2,10 +2,11 @@ import React from "react";
 import "./About.css";
 import "./Fonts.css";
 import FooterNew from "./Footer/Footer.jsx";
+import TopRedirect from "./TopRedirect";
 
 const About = () =>{
     return(<>
-    <section className="alignAboutItems imgFull" style={{backgroundSize: 'cover', backgroundImage: `url("https://static1.hkrtcdn.com/mbnext/static/media/misc/banner.png")`}}>
+    <section className="alignAboutItems imgFull" id="abtTop" style={{backgroundSize: 'cover', backgroundImage: `url("https://static1.hkrtcdn.com/mbnext/static/media/misc/banner.png")`}}>
         <div className="cardAlign">
             <h1 className="Mont800" style={{color:"white"}}>Our <span className="Mont800" style={{color:"#FFD369"}}>Story</span></h1>
             <p className="Mont600" style={{color:"white"}}>The journey of becoming India’s leading Sports Nutrition Brand</p>
@@ -59,6 +60,7 @@ const About = () =>{
             </div>
         </div>
     </section>
+    <TopRedirect location="#abtTop"/>
     <FooterNew/>
     </>);
 }

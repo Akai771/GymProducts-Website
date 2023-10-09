@@ -54,6 +54,7 @@
   }
 
 .ProdSectAln{
+    background-color: #FFD369;
     padding-top: 20px;
     display: grid;
     place-items: center;

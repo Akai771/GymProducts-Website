@@ -6,10 +6,11 @@ import ProdData from "./Prodcard/prod_Data";
 import "./Home.css";
 import "./Fonts.css";
 import FooterNew from "./Footer/Footer.jsx";
+import TopRedirect from "./TopRedirect.jsx";
 
 const Home = () =>{
     return(<>
-    <div>
+    <div id="topCarousel">
         <CarouselHome />
     </div>
     <section className="alignHomeItems popSect">
@@ -45,6 +46,7 @@ const Home = () =>{
             <h1 className="Mont800" style={{fontSize:25, textAlign:"center"}}>+ MuscleBlaze - Leading Bodybuilding & Sports Nutrition Supplement Brand</h1>
         </div>
     </section>
+    <TopRedirect location="#topCarousel"/>
     <FooterNew/>
     </>);
 

@@ -8,6 +8,7 @@ import './DietCalc.css'
 import './DietCard.css'
 import './Fonts.css'
 import FooterNew from "./Footer/Footer";
+import TopRedirect from "./TopRedirect";
 // import Accordion from 'react-bootstrap/Accordion';
 
 const DietCalc = () => {
@@ -298,7 +299,7 @@ const DietCalc = () => {
         }
     
     return (<>
-    <section className="topSec">
+    <section className="topSec" id="top">
             <div className="BmiCardAlign">
                 <div>
                 
@@ -351,6 +352,7 @@ const DietCalc = () => {
     <section className="bottomSec">
         
     </section>
+    <TopRedirect location="#top"/>
     <FooterNew/>
     
     </>);
