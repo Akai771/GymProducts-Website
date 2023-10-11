@@ -4,6 +4,7 @@ import CartButton from "../CartPage/CartButtons/CartButton";
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
+import FooterNew from "../Footer/Footer";
 
 
 function ProductDesc() {
@@ -19,16 +20,17 @@ function ProductDesc() {
         </Breadcrumbs>
             <div className="productDescImg">
                 <img src="https://img2.hkrtcdn.com/30466/prd_3046521-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg" alt="product" />
+                <img className="prodimgInfo" src="https://img4.hkrtcdn.com/27177/bnr_2717634_o.jpg" alt="product" />
             </div>
         </div>
         <div className="prodDescInfo">
-            <p>Whey Protiens</p>
-            <h2>MuscleBlaze Biozyme Performance Whey</h2>
-            <p>2 kg (4.4 lb), Chocolate Hazelnut</p>
+            <span className="Mont400">Whey Protiens</span>
+            <h2 className="Mont800">MuscleBlaze Biozyme Performance Whey</h2>
+            <p className="Mont600">2 kg (4.4 lb), Chocolate Hazelnut</p>
             <div className="prodDescPrice">
-                <p>MRP: <s>₹3,999</s></p>
-                <h3>Price: ₹5,999 <span>(33% off)</span></h3>
-                <p>Inclusive all Taxes</p>
+                <p className="Mont400">MRP: <s>₹3,999</s></p>
+                <h3 className="Mont600" style={{fontSize:23}}>Price: ₹5,999 <span style={{color:"#23B295", fontSize:16}}>(33% off)</span></h3>
+                <p className="Mont400" style={{fontSize:14}}>Inclusive all Taxes</p>
                 <hr />
                 <div className="quantityBtn">
                     <span>Select Quantity</span>
@@ -46,10 +48,53 @@ function ProductDesc() {
                     </div>
                 </div>
                 <hr />
-                
+                <div>
+                    <p className="Mont600 vl-2">Product Benefits</p>
+                    <div className="benAln">
+                        <ul>
+                            <li className="Mont400">"INFORMED CHOICE, UK, LABDOOR, USA & TRUSTIFIED- TESTED & CERTIFIED It has been regularly & rigorously tested, certified by Informed Choice Program U.K., Labdoor USA, Trustified for Accuracy of label Claims (Protein content, no amino spiking) & Purity (free from heavy metals or biological contaminants)"</li>
+                            <li className="Mont400">ENHANCED ABSORPTION FORMULA (EAF ®) in MB Biozyme Performance Whey ensures 50% higher protein absorption & 60% superior BCAA absorption compared to other whey proteins. This proprietary formulation of MB is international patent-applied</li>
+                            <li className="Mont400">FIRST CLINICALLY TESTED Whey Protein offerings in India, the leading Biozyme range by MuscleBlaze ® is proven for efficacy of absorption, having direct impact on muscle-building</li>
+                            <li className="Mont400">EASY PROTEIN DIGESTION in Biozyme Performance Whey makes it widely recommended since it significantly lowers any possible stomach discomfort/ challenge from protein digestion</li>
+                            <li className="Mont400">25g PROTEIN, 11.75g EAA, 5.51g BCAA- Biozyme Performance Whey delivers all this per scoop powered by all-imported, highest grade, international quality Whey Protein Concentrate</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <span className="Mont400">Per 36gm of 56 servings Contains*</span>
+                    <div className="prodNutriCardAln">
+                            <div className="prodNutriCard">
+                                <span >25g</span>
+                                <span className="Mont400" style={{fontSize:10}}>of Protien</span>  
+                            </div>
+                            <div className="prodNutriCard">
+                                <span >5.51g</span>
+                                <span className="Mont400" style={{fontSize:10}}>of BCAA</span>  
+                            </div>
+                            <div className="prodNutriCard">
+                                <span >11.75g</span>
+                                <span className="Mont400" style={{fontSize:10}}>of EAA</span>  
+                            </div>
+                            <div className="prodNutriCard">
+                                <span >4.38g</span>
+                                <span className="Mont400" style={{fontSize:10}}>of Glutamic acid</span>  
+                            </div>
+                            <div className="prodNutriCard">
+                                <span >141</span>
+                                <span className="Mont400" style={{fontSize:10}}>of Kcal</span>  
+                            </div>
+                            <div className="prodNutriCard">
+                                <span >69.0</span>
+                                <span className="Mont400" style={{fontSize:10}}>of Protien % per Serving</span>  
+                            </div>
+                    </div>
+                </div>
+                <hr />
             </div>
         </div>
     </section>
+    <FooterNew />
     </>)
 }
 
