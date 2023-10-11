@@ -23,7 +23,7 @@ const FitFoodsCard = ({FitFoodsData}) => {
           <div class="Prodcard-info">
             <p class="text-title Mont200" style={{fontSize:16}}>{FitFoodsTitle}</p>
             <p class="text-body " style={{fontSize:12}}>{FitFoodsDesc}</p>
-            <span class="text-title Mont200" style={{fontSize:16}}>{FitFoodsPrice}</span>
+            <span class="text-title Mont200" style={{fontSize:16}}>₹{FitFoodsPrice}</span>
           </div>
           <div class="ProductDispCard-footer">
             <button class="button2" onClick={handleChange}>{buttonTxt}</button>

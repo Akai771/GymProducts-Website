@@ -1,17 +1,17 @@
 const ProtienShakesData = [
     {
         id: 1,
-        ProtienShakeImage: "https://img8.hkrtcdn.com/30466/prd_3046527-MuscleBlaze-Biozyme-Performance-Whey-8.8-lb-Rich-Chocolate_c_s.jpg",
-        ProtienShakeTitle: "Biozyme Performance Whey",
-        ProtienShakeDesc: "4 kg, Rich Chocolate",
-        ProtienShakePrice: 7399,
-    },
-    {
-        id: 2,
         ProtienShakeImage: "https://img4.hkrtcdn.com/30466/prd_3046513-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_c_s.jpg",
         ProtienShakeTitle: "Biozyme Performance Whey",
         ProtienShakeDesc: "2 kg, Rich Chocolate",
         ProtienShakePrice: 3899,
+    },
+    {
+        id: 2,
+        ProtienShakeImage: "https://img8.hkrtcdn.com/30466/prd_3046527-MuscleBlaze-Biozyme-Performance-Whey-8.8-lb-Rich-Chocolate_c_s.jpg",
+        ProtienShakeTitle: "Biozyme Performance Whey",
+        ProtienShakeDesc: "4 kg, Rich Chocolate",
+        ProtienShakePrice: 7399,
     },
     {
         id: 3,
