@@ -8,10 +8,10 @@ const FitFoodsCard = ({FitFoodsData}) => {
   const {FitFoodsImage, FitFoodsTitle, FitFoodsDesc, FitFoodsPrice} = FitFoodsData;
 
   function handleChange() {
-      if (buttonTxt === 'Added to Cart') {
+      if (buttonTxt === 'Remove from Cart') {
         setButtonTxt('Add to Cart');
       } else{
-        setButtonTxt('Added to Cart');
+        setButtonTxt('Remove from Cart');
       }
     }
     return (

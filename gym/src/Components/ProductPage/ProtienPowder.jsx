@@ -3,6 +3,7 @@ import ProtienCard from "./ProductCard/ProtienCard";
 import ProtienShakeData from "./ProductData/ProtienShakesData";
 import "./ProductDisplay.css";
 import FooterNew from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const ProductDisplay = () => {
   return (

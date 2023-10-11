@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./ProdPageCard.css";
+import { Link } from "react-router-dom";
 
 
 const ProtienCard = ({ProtienShakeData}) => {
@@ -8,17 +9,19 @@ const ProtienCard = ({ProtienShakeData}) => {
   const {ProtienShakeImage, ProtienShakeTitle, ProtienShakeDesc, ProtienShakePrice} = ProtienShakeData;
 
   function handleChange() {
-      if (buttonTxt === 'Added to Cart') {
+      if (buttonTxt === 'Remove from Cart') {
         setButtonTxt('Add to Cart');
       } else{
-        setButtonTxt('Added to Cart');
+        setButtonTxt('Remove from Cart');
       }
     }
     return (
       <>
         <div class="ProductDispCard">
           <div class="ProductDispCard-img">
-            <img src={ProtienShakeImage} alt={ProtienShakeTitle} />
+            <Link to="/productdesc">
+              <img src={ProtienShakeImage} alt={ProtienShakeTitle} />
+            </Link>
           </div>
           <div class="Prodcard-info">
             <p class="text-title Mont200" style={{fontSize:16}}>{ProtienShakeTitle}</p>

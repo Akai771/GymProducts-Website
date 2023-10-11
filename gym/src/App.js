@@ -14,6 +14,7 @@ import CartPage from "./Components/CartPage/CartPage";
 import FitFoods from "./Components/ProductPage/FitFoods";
 import FatLoss from "./Components/ProductPage/FatLoss";
 import Vitamins from "./Components/ProductPage/Vitamins";
+import ProductDesc from "./Components/ProductDescPage/ProductDesc";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/FitFoods" element={<FitFoods/>} />
           <Route exact path="/FatLoss" element={<FatLoss/>} />
           <Route exact path="/Vitamins" element={<Vitamins/>} />
+          <Route exact path="/ProductDesc" element={<ProductDesc/>} />
         </Routes>
       </Router>
     </>
