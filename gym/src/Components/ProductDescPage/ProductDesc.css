@@ -81,6 +81,7 @@
 
 .alnProdGuaranteeIcon img{
     width: 50px;
+    padding-bottom: 10px;
 }
 
 .alnProdGuarantee{
@@ -88,9 +89,5 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 2rem;
     font-size: 12px;
-
-}
-
-.boxLine{
 
 }
