@@ -19,14 +19,14 @@ function ProductDesc() {
             <Link underline="hover" color="text.primary" to="/ProductDesc" aria-current="page">Breadcrumbs</Link>
         </Breadcrumbs>
             <div className="productDescImg">
-                <img src="https://img2.hkrtcdn.com/30466/prd_3046521-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg" alt="product" />
+                <img src="https://img4.hkrtcdn.com/30466/prd_3046513-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg" alt="product" />
                 <img className="prodimgInfo" src="https://img4.hkrtcdn.com/27177/bnr_2717634_o.jpg" alt="product" />
             </div>
         </div>
         <div className="prodDescInfo">
             <span className="Mont400">Whey Protiens</span>
             <h2 className="Mont800">MuscleBlaze Biozyme Performance Whey</h2>
-            <p className="Mont600">2 kg (4.4 lb), Chocolate Hazelnut</p>
+            <p className="Mont600">2 kg (4.4 lb), Rich Chocolate</p>
             <div className="prodDescPrice">
                 <p className="Mont400">MRP: <s>₹3,999</s></p>
                 <h3 className="Mont600" style={{fontSize:23}}>Price: ₹5,999 <span style={{color:"#23B295", fontSize:16}}>(33% off)</span></h3>
@@ -88,6 +88,21 @@ function ProductDesc() {
                                 <span >69.0</span>
                                 <span className="Mont400" style={{fontSize:10}}>of Protien % per Serving</span>  
                             </div>
+                    </div>
+                </div>
+                <hr />
+                <div className="alnProdGuarantee">
+                    <div className="alnProdGuaranteeIcon boxLine">
+                        <img src="https://static1.hkrtcdn.com/mbnext/static/media/icons/revamp/100safe_v1.svg" alt="" />
+                        <span className="Mont400">Authenticity Guaranteed</span>
+                    </div>
+                    <div className="alnProdGuaranteeIcon boxLine">
+                        <img src="https://static1.hkrtcdn.com/mbnext/static/media/pdp/return_product_icon_v1.svg" alt="" />
+                        <span className="Mont400">14 Days Returnable</span>
+                    </div>
+                    <div className="alnProdGuaranteeIcon boxLine">
+                        <img src="https://static1.hkrtcdn.com/mbnext/static/media/icons/revamp/shipping_new_v1.svg" alt="" />
+                        <span className="Mont400">Free Shipping</span>
                     </div>
                 </div>
                 <hr />

@@ -69,3 +69,28 @@
     color: #393E46;
     margin: 0px 20px;
 }
+
+.alnProdGuaranteeIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.alnProdGuaranteeIcon img{
+    width: 50px;
+}
+
+.alnProdGuarantee{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+    font-size: 12px;
+
+}
+
+.boxLine{
+
+}
