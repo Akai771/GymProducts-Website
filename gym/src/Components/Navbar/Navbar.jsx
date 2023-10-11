@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css"
 import { Link } from "react-router-dom";
-import Search from "./SearchBar";
-import CartCard from "./Prodcard/CartCard";
+import Search from "../SearchBar/SearchBar";
+import CartCard from "../Prodcard/CartCard";
 
 function NavBar() {
 	return (

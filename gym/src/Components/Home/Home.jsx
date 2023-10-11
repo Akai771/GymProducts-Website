@@ -1,12 +1,14 @@
 import React from "react";
-import CarouselHome from "./Carousel.jsx";
-import ProdCard from "./Prodcard/ProdCard";
-import HomeInfoSec from "./HomeInfo/homeInfoSec.jsx";
-import ProdData from "./Prodcard/prod_Data";
+import CarouselHome from "../Carousel/Carousel.jsx";
+import ProdCard from "../Prodcard/ProdCard.jsx";
+import HomeInfoSec from "../HomeInfo/homeInfoSec.jsx";
+import ProdData from "../Prodcard/prod_Data.jsx";
+import JustLaunchedData from "../Prodcard/JLData.jsx";
+import JLCard from "../Prodcard/JLCard.jsx";
 import "./Home.css";
-import "./Fonts.css";
-import FooterNew from "./Footer/Footer.jsx";
-import TopRedirect from "./TopRedirect.jsx";
+import "../Fonts.css";
+import FooterNew from "../Footer/Footer.jsx";
+import TopRedirect from "../TopRedirectButton/TopRedirect";
 
 const Home = () =>{
     return(<>
@@ -30,8 +32,8 @@ const Home = () =>{
         <div class="vl"><h1 className="Mont800" style={{color:"#393E46", paddingLeft:"10px"}}>Just Launched!</h1></div>
         <br/>
         <div className="rowCard">
-            {ProdData.map((ProdData) => (
-                <ProdCard key={ProdData.id} ProdData={ProdData}/>
+            {JustLaunchedData.map((JustLaunchedData) => (
+                <JLCard key={JustLaunchedData.id} JustLaunchedData={JustLaunchedData}/>
             ))
             }
         </div>

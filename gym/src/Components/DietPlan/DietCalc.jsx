@@ -6,9 +6,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './DietCalc.css'
 import './DietCard.css'
-import './Fonts.css'
-import FooterNew from "./Footer/Footer";
-import TopRedirect from "./TopRedirect";
+import '../Fonts.css'
+import FooterNew from "../Footer/Footer";
+import TopRedirect from "../TopRedirectButton/TopRedirect";
 // import Accordion from 'react-bootstrap/Accordion';
 
 const DietCalc = () => {

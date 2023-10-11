@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
-import "./Fonts.css";
-import FooterNew from "./Footer/Footer.jsx";
-import TopRedirect from "./TopRedirect";
+import "../Fonts.css";
+import FooterNew from "../Footer/Footer.jsx";
+import TopRedirect from "../TopRedirectButton/TopRedirect";
 
 const About = () =>{
     return(<>

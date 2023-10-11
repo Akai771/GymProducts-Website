@@ -9,7 +9,7 @@ const Gainer = () => {
     <>
       <section className="ProdSectAln">
         <h1 className="Mont800">Gainer</h1>
-        <p className="Mont400" style={{fontSize:13}}>Our Gainers are made with high-quality ingredients and are available in a variety of flavors. They are a convenient way to gain body mass.</p>
+        <p className="Mont400" style={{fontSize:13}}>We have a range of Mass Gainer & Weight Gainer in a variety of flavours and special ingredients like Digezyme, a blend of digestive enzymes, to give better results with maximum absorption.</p>
           <div className="ProdAlnCard">
               {GainerData.map((GainerData) => (
                   <GainerCard key={GainerData.id} GainerData={GainerData}/>

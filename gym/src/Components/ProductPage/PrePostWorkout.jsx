@@ -9,7 +9,7 @@ const PrePostWorkout = () => {
     <>
       <section className="ProdSectAln">
         <h1 className="Mont800">Pre/Post <span className="Mont800" style={{color:"white"}}>Workout</span></h1>
-        <p className="Mont400" style={{fontSize:13}}>Pre-workout supplements are a great addition to the supplement rack of every fitness enthusiast. They enhance workout performance & focus - preventing early fatigue and reducing protein breakdown.</p>
+        <p className="Mont400" style={{fontSize:13}}>We offer the best pre-workout supplements & post-workout supplements that help in boosting your performance & recovery and delaying fatigue along with boosting muscle growth.</p>
           <div className="ProdAlnCard">
               {PrePostWorkoutData.map((PrePostWorkoutData) => (
                   <PrePostWorkoutCard key={PrePostWorkoutData.id} PrePostWorkoutData={PrePostWorkoutData}/>

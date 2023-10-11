@@ -1,6 +1,7 @@
 .Prodcard {
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
     width: 240px;
     height: 380px;
     padding: .8em;
@@ -16,7 +17,6 @@
 }
    
    .Prodcard-img {
-    background-color: #ffcaa6;
     height: 50%;
     width: 100%;
     border-radius: .5rem;

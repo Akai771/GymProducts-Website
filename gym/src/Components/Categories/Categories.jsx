@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Categories.css";
-import "./Fonts.css";
+import "../Fonts.css";
 // import ProdCard from "./Prodcard/ProdCard";
 
 const Prod = () => {

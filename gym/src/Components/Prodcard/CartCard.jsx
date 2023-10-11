@@ -8,7 +8,7 @@ function CartCard() {
     return(<>
         <div>
             <div >
-		        <Link to="/PracPage" className="cartCard"><ShoppingCartOutlinedIcon/></Link>
+		        <Link to="/CartPage" className="cartCard"><ShoppingCartOutlinedIcon/></Link>
 	        </div>
             
         </div>    
