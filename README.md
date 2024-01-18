@@ -1,4 +1,4 @@
-# Gym Products Website
+# Gym Products Website (Muscle Blaze Clone)
 This React.js project is a gym consumption products website where users can browse and purchase a variety of products, such as protein powders, supplements, and workout apparel. The website also features a BMI calculator that allows users to determine their body mass index and receive personalized diet recommendations.
 
 **Features:**
